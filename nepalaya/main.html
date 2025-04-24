@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepalaya College</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaf4fc;
+            color: #333;
+        }
+
+        header.header {
+            background-color: #0056b3;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo h1 {
+            font-size: 26px;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin: 0 15px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav li a:hover {
+            color: #ffcc00;
+        }
+
+        .signup-login {
+            text-align: right;
+            margin: 10px 50px;
+        }
+
+        .signup-login a {
+            margin-left: 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .intro-section, .admission-section, .programs-section {
+            background-color: #d0e6ff;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .intro-section h4, .admission-section h2, .programs-section h3 {
+            color: #4b0082;
+            margin-bottom: 15px;
+        }
+
+        .intro-section p, .admission-section p, .programs-section p {
+            color: #003366;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .intro-section img, .about-imgs img {
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .about-imgs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h3, h5 {
+            margin-top: 30px;
+            color: #6a0dad;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        .programs-section p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://imgs.search.brave.com/hXra6_tIu5RGNk_4OdXtBSVijCvOmwYzlRneJKVcYsY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hZG1p/c3Npb25uZXBhbC5j/b20vZmlsZV9zdG9y/YWdlL2xvZ28tbmVw/YWxheWEtMjAyMC0w/MV8xNjE2MzEwNDc1/LndlYnA" alt="Nepalaya Logo">
+            <h1>Nepalaya College</h1>
+        </div>
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+        </ul>
+    </header>
+
+    <div class="signup-login">
+        <p>Don't have an account?
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+
+    <section class="intro-section">
+        <h4>Hello, viewers! Welcome to Nepalaya College</h4>
+        <p>At Nepalaya College, we are committed to nurturing talent and fostering innovation. Join us to embark on a journey of academic excellence and personal growth.</p>
+        <img src=" https://imgs.search.brave.com/HFg0i-A3D9JbeJBOW5pNgSAqaeFkHt9hzYWsJkZHiCg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzVlLzhl/LzI2LzVlOGUyNjc0/NjA2YTBhZDRlZDlk/OGQ4ZjhlZWMxNmI1/LmpwZw" width="100" >
+    </section>
+
+    <section class="admission-section">
+        <h2>Admission Open for 2025</h2>
+        <p>Admission is now open for the academic year 2025. Apply now to secure your seat.</p>
+    </section>
+
+    <div class="about-imgs">
+        <img src="https://nepalaya.edu.np/static/media/about2.610907e134664848485d.jpeg" alt="About Nepalaya" width="400">
+        <img src="https://imgs.search.brave.com/baRMbd_xATsQJWWL7YF_1xaxN_9mPqbeG8rtqrZ5AH8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aGVl/ZHVuZXBhbC5hcC1z/b3V0aC0xLmxpbm9k/ZW9iamVjdHMuY29t/L3NjaG9vbGZhaXIv/Y2xpZW50cy9uZXBh/bGF5YXNjaG9vbC9n/YWxsZXJ5L2dhbGxl/cnkvbmVwYWxheWEz/XzE2ODQzOTgwNzgu/anBn" alt="Campus" width="400">
+    </div>
+
+    <section class="programs-section">
+        <h3>ALL - ACADEMIC</h3>
+
+        <h5>TRIBHUVAN UNIVERSITY (TU)</h5>
+        <p>Nepalaya is an established private educational institute. All undergraduate and master's programs are affiliated with Tribhuvan University. Nepalaya offers BSc CSIT, BBM, BCA, BBS, and MBS programs.</p>
+
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>This program equips students with a strong foundation in computer applications and software development, preparing them for careers in IT and software engineering.</p>
+
+        <h3>Bachelor of Science in CSIT (BSc CSIT)</h3>
+        <p>This program offers deep knowledge in computer science, programming, data structures, and IT management, preparing students for tech roles in various sectors.</p>
+
+        <h3>Bachelor of Business Administration (BBA)</h3>
+        <p>The BBA program develops leadership and business management skills across finance, marketing, HR, and entrepreneurship.</p>
+
+        <h3>Bachelor of Business Studies (BBS)</h3>
+        <p>BBS focuses on comprehensive business education including accounting, economics, and organizational behavior for careers in finance and administration.</p>
+
+        <h3>Bachelor of Hotel Management (BHM)</h3>
+        <p>The BHM program offers training in hotel operations and customer service, preparing graduates for global careers in hospitality and tourism.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details | Nepalaya College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .course-card {
+            background: #eef;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #2196f3;
+            border-radius: 8px;
+        }
+
+        .course-card h2 {
+            color: #2196f3;
+            margin-top: 0;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #2196f3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        h3 {
+            color: #e53935;
+            margin-bottom: 5px;
+        }
+
+        .group label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .subjects {
+            background: #f9f9f9;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            background-color: #2196f3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover,
+        .apply-btn:hover {
+            background-color: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Available Courses at Nepalaya College</h1>
+
+        <div class="course-card">
+            <h2>BSc CSIT</h2>
+            <p><strong>Duration:</strong> 4 years</p>
+            <p><strong>Eligibility:</strong> 10+2 or equivalent</p>
+            <p><strong>Course Fee:</strong> NPR 5,00,000</p>
+            <p><strong>Course Structure:</strong> 8 semesters</p>
+            <p><strong>Course Coordinator:</strong> Mr. Kapil Bam Thakuri</p>
+            <p><strong>Contact:</strong> 01-1234567</p>
+            <p><strong>Email:</strong> csit01@nepalaya.edu.np</p>
+            <a href="apply.html" class="apply-btn" target="_blank">Apply Now</a>
+        </div>
+
+        <div class="course-card">
+            <h2>BCA</h2>
+            <p><strong>Duration:</strong> 4 years</p>
+            <p><strong>Eligibility:</strong> 10+2 or equivalent</p>
+            <p><strong>Course Fee:</strong> NPR 3,50,000</p>
+            <p><strong>Course Structure:</strong> 8 semesters</p>
+            <p><strong>Course Coordinator:</strong> Mr. Kapil Bam Thakuri</p>
+            <p><strong>Contact:</strong> 01-1234567</p>
+            <p><strong>Email:</strong> bca01@nepalaya.edu.np</p>
+            <a href="apply.html" class="apply-btn" target="_blank">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Select Your Education</h2>
+
+        <div class="group">
+            <h3>+2 Stream</h3>
+            <label><input type="radio" name="plus2" onclick="showSubjects('physical-subjects')"> Physical Group</label>
+            <label><input type="radio" name="plus2" onclick="showSubjects('biology-subjects')"> Biology Group</label>
+
+            <div id="physical-subjects" class="subjects">
+                <strong>Subjects for Physical Group:</strong>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Computer Science</li>
+                </ul>
+            </div>
+
+            <div id="biology-subjects" class="subjects">
+                <strong>Subjects for Biology Group:</strong>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Biology</li>
+                    <li>Mathematics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="group">
+            <h3>Bachelor's Program</h3>
+            <label><input type="radio" name="bachelor" onclick="showSubjects('bca-subjects')"> BCA</label>
+            <label><input type="radio" name="bachelor" onclick="showSubjects('csit-subjects')"> CSIT</label>
+            <label><input type="radio" name="bachelor" onclick="showSubjects('bba-subjects')"> BBA</label>
+            <label><input type="radio" name="bachelor" onclick="showSubjects('bbs-subjects')"> BBS</label>
+            <label><input type="radio" name="bachelor" onclick="showSubjects('bhm-subjects')"> BHM</label>
+
+            <div id="bca-subjects" class="subjects">
+                <strong>Subjects for BCA:</strong>
+                <ul>
+                    <li>Programming in C</li>
+                    <li>Data Structures</li>
+                    <li>Web Development</li>
+                    <li>Database Management</li>
+                </ul>
+            </div>
+
+            <div id="csit-subjects" class="subjects">
+                <strong>Subjects for CSIT:</strong>
+                <ul>
+                    <li>Computer Architecture</li>
+                    <li>Data Structures</li>
+                    <li>Networking</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
+
+            <div id="bba-subjects" class="subjects">
+                <strong>Subjects for BBA:</strong>
+                <ul>
+                    <li>Business Communication</li>
+                    <li>Marketing Management</li>
+                    <li>Accounting</li>
+                    <li>Financial Management</li>
+                </ul>
+            </div>
+
+            <div id="bbs-subjects" class="subjects">
+                <strong>Subjects for BBS:</strong>
+                <ul>
+                    <li>Microeconomics</li>
+                    <li>Statistics</li>
+                    <li>Business Law</li>
+                    <li>Taxation</li>
+                </ul>
+            </div>
+
+            <div id="bhm-subjects" class="subjects">
+                <strong>Subjects for BHM:</strong>
+                <ul>
+                    <li>Food & Beverage Management</li>
+                    <li>Front Office Operations</li>
+                    <li>Tourism Studies</li>
+                    <li>Housekeeping Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>General Information Form</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label>Who recommended you?</label>
+                <label><input type="radio" name="recommend" value="Friends"> Friends</label>
+                <label><input type="radio" name="recommend" value="Facebook"> Facebook</label>
+                <label><input type="radio" name="recommend" value="Instagram"> Instagram</label>
+                <label><input type="radio" name="recommend" value="TikTok"> TikTok</label>
+                <label><input type="radio" name="recommend" value="Newspaper"> Newspaper</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function showSubjects(subjectId) {
+            const allSubjects = document.querySelectorAll('.subjects');
+            allSubjects.forEach(subject => subject.style.display = 'none');
+            const selected = document.getElementById(subjectId);
+            if (selected) selected.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

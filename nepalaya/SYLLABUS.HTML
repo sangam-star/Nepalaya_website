@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: darkred;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #ff9999;
+            color: white;
+        }
+
+        select {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .subject-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Syllabus under TU course</h3>
+    <p>
+        The syllabus for various programs under Tribhuvan University (TU) is designed to provide a comprehensive understanding of the respective fields.
+    </p>
+
+    <div>
+        <label for="subjectSelect"><strong>Select a Subject:</strong></label>
+        <select id="subjectSelect" onchange="showSyllabus()">
+            <option value="">-- Choose --</option>
+            <option value="bca">BCA</option>
+            <option value="csit">CSIT</option>
+            <option value="bba">BBA</option>
+            <option value="bbs">BBS</option>
+            <option value="bhm">BHM</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div id="bca" class="subject-section">
+            <h2>BCA Syllabus</h2>
+            <table>
+                <tr><th>Semester</th><th>Subjects</th></tr>
+                <tr><td>1st</td><td>Fundamentals of IT, C Programming, Mathematics</td></tr>
+                <tr><td>2nd</td><td>Data Structures, OOP in Java, Web Technology</td></tr>
+                <tr><td>3rd</td><td>Database Management, Computer Networks</td></tr>
+                <tr><td>4th</td><td>Software Engineering, Artificial Intelligence</td></tr>
+                <tr><td>5th</td><td>Advanced Java, Cloud Computing</td></tr>
+                <tr><td>6th</td><td>Cyber Security, Mobile App Development</td></tr>
+                <tr><td>7th</td><td>Project Work, Internship</td></tr>
+                <tr><td>8th</td><td>Final Year Project, Seminar</td></tr>
+            </table>
+        </div>
+
+        <div id="csit" class="subject-section">
+            <h2>CSIT Syllabus</h2>
+            <table>
+                <tr><th>Semester</th><th>Subjects</th></tr>
+                <tr><td>1st</td><td>Calculus, Digital Logic, C Programming</td></tr>
+                <tr><td>2nd</td><td>Physics, Data Structures, Discrete Mathematics</td></tr>
+                <tr><td>3rd</td><td>Software Engineering, Operating System</td></tr>
+                <tr><td>4th</td><td>Computer Graphics, Probability & Statistics</td></tr>
+                <tr><td>5th</td><td>Database Systems, Web Development</td></tr>
+                <tr><td>6th</td><td>AI, Machine Learning, Cryptography</td></tr>
+                <tr><td>7th</td><td>Data Mining, Cloud Security</td></tr>
+                <tr><td>8th</td><td>Thesis, Cyber Security</td></tr>
+            </table>
+        </div>
+
+        <div id="bba" class="subject-section">
+            <h2>BBA Syllabus</h2>
+            <table>
+                <tr><th>Semester</th><th>Subjects</th></tr>
+                <tr><td>1st</td><td>Business Communication, Accounting</td></tr>
+                <tr><td>2nd</td><td>Business Statistics, Business Law</td></tr>
+                <tr><td>3rd</td><td>Marketing Management, Financial Accounting</td></tr>
+                <tr><td>4th</td><td>Financial Management, Human Resource</td></tr>
+                <tr><td>5th</td><td>Strategic Management, Risk Management</td></tr>
+                <tr><td>6th</td><td>Business Analysis, International Business</td></tr>
+                <tr><td>7th</td><td>Leadership, Supply Chain</td></tr>
+                <tr><td>8th</td><td>Business Ethics, Final Project</td></tr>
+            </table>
+        </div>
+
+        <div id="bbs" class="subject-section">
+            <h2>BBS Syllabus</h2>
+            <table>
+                <tr><th>Semester</th><th>Subjects</th></tr>
+                <tr><td>1st</td><td>Financial Accounting, Microeconomics</td></tr>
+                <tr><td>2nd</td><td>Business Economics, Cost Accounting</td></tr>
+                <tr><td>3rd</td><td>Business Finance, Organizational Behavior</td></tr>
+                <tr><td>4th</td><td>Taxation, Entrepreneurship</td></tr>
+                <tr><td>5th</td><td>Auditing, Managerial Accounting</td></tr>
+                <tr><td>6th</td><td>Business Research, Banking</td></tr>
+                <tr><td>7th</td><td>Corporate Finance, Investment Analysis</td></tr>
+                <tr><td>8th</td><td>Capstone Project, Management Control</td></tr>
+            </table>
+        </div>
+
+        <div id="bhm" class="subject-section">
+            <h2>BHM Syllabus</h2>
+            <table>
+                <tr><th>Semester</th><th>Subjects</th></tr>
+                <tr><td>1st</td><td>Hospitality Industry, Food & Beverage</td></tr>
+                <tr><td>2nd</td><td>Front Office, Housekeeping</td></tr>
+                <tr><td>3rd</td><td>Food Science, Travel & Tourism</td></tr>
+                <tr><td>4th</td><td>Event Management, Business Law</td></tr>
+                <tr><td>5th</td><td>Food & Beverage Service, Nutrition</td></tr>
+                <tr><td>6th</td><td>Customer Service, Resort Management</td></tr>
+                <tr><td>7th</td><td>Food Production, Catering</td></tr>
+                <tr><td>8th</td><td>Internship, Hotel Management</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showSyllabus() {
+            const selected = document.getElementById('subjectSelect').value;
+            const sections = document.querySelectorAll('.subject-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            if (selected) {
+                document.getElementById(selected).style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
